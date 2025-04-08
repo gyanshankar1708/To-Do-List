@@ -23,7 +23,6 @@ main{
     padding: 10rem;
     flex-direction: column;
     align-items: center;
-    min-height: 48vh;
 }
 
 main input{
