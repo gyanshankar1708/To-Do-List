@@ -41,6 +41,7 @@ main button{
     background-color: #347DAD;
     color: white;
     cursor: pointer;
+    font-size: 1.5rem;
 }
 
 main button:hover{
@@ -69,4 +70,39 @@ main button:hover{
     padding: 1rem 3rem;
     border-radius: 15px;
     margin: 2rem 0;
+}
+
+.inputval{
+    display: flex;
+    gap:1rem;
+}
+
+@media screen and  (max-width:774px){
+    .inputval{
+        flex-direction :column;
+        align-items:center;
+        justify-content: center;;
+    }
+    nav{
+        padding: 2rem 5rem;
+    }
+    nav div{
+        font-size:1rem;
+    }
+}
+
+@media screen and (max-width:625px){
+    .items{
+        margin:1rem 0;
+    }
+    .list{
+        padding: 2rem 5rem;
+        font-size: 1rem;;
+    }
+    main button{
+        font-size: 1rem;;
+    }
+    main input{
+        font-size: 1rem;;
+    }
 }
