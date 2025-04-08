@@ -1,23 +1,25 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body{
+body {
     background-color: #747272;
 }
-nav{
-    background-color:#FEA0A0;
+
+nav {
+    background-color: #FEA0A0;
     display: flex;
     justify-content: space-between;
     padding: 2rem 9rem;
 }
 
-nav div{
+nav div {
     font-size: 1.2rem;
     font-weight: 600;
 }
-main{
+
+main {
     display: flex;
     justify-content: center;
     padding: 10rem;
@@ -25,85 +27,131 @@ main{
     align-items: center;
 }
 
-main input{
+main input {
     height: 3rem;
     width: 15rem;
     border-radius: 100px;
     padding: 0 3rem;
     border: 2px solid black;
-    font-size:1.2rem;
+    font-size: 1.2rem;
 }
 
-main button{
+main button {
     height: 3rem;
     padding: 0 2rem;
     border-radius: 100px;
-    border:2px solid black;
+    border: 2px solid black;
     background-color: #347DAD;
     color: white;
     cursor: pointer;
     font-size: 1.5rem;
 }
 
-main button:hover{
+main button:hover {
     background-color: white;
     color: #347DAD;
 }
 
-#clear{
+#clear {
     cursor: pointer;
 }
 
-#clear:hover{
+#clear:hover {
     color: rgb(59, 59, 59);
 }
 
-.list{
+.list {
     background-color: #A3A3A3;
     padding: 2rem 10rem;
     font-size: 2rem;
-    margin :4rem;
+    margin: 4rem;
     border-radius: 50px;
 }
 
-.items{
+.items {
     background-color: #DD373A;
     padding: 1rem 3rem;
     border-radius: 15px;
     margin: 2rem 0;
 }
 
-.inputval{
+.inputval {
     display: flex;
-    gap:1rem;
+    gap: 1rem;
 }
 
-@media screen and  (max-width:774px){
-    .inputval{
-        flex-direction :column;
-        align-items:center;
-        justify-content: center;;
+@media screen and (max-width:774px) {
+    .inputval {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        ;
     }
-    nav{
+
+    nav {
         padding: 2rem 5rem;
     }
-    nav div{
-        font-size:1rem;
+
+    nav div {
+        font-size: 1rem;
     }
 }
 
-@media screen and (max-width:625px){
-    .items{
-        margin:1rem 0;
+@media screen and (max-width:625px) {
+    .items {
+        margin: 1rem 0;
     }
-    .list{
+
+    .list {
         padding: 2rem 5rem;
-        font-size: 1rem;;
+        font-size: 1rem;
+        ;
     }
-    main button{
-        font-size: 1rem;;
+
+    main button {
+        font-size: 1rem;
+        ;
     }
-    main input{
-        font-size: 1rem;;
+
+    main input {
+        font-size: 1rem;
+        ;
     }
+}
+
+footer {
+    background-color: #4c4c4c;
+    padding: 1rem 2rem;
+}
+
+footer ol {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+a img {
+    aspect-ratio: 1;
+    height: 2rem;
+}
+
+a:hover {
+    transform: scale(1.1);
+    color: grey;
+}
+
+@media screen and (max-width:415px) {
+    a {
+        flex-direction: column;
+    }
+
 }
