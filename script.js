@@ -23,9 +23,11 @@ window.onload = () => {
 
 btn.addEventListener("click", () => {
   let val = document.getElementById("note").value;
-  list.innerHTML += htmlCreate(val);
-  localStore(val);
-  document.getElementById("note").value = "";
+  if (val != ""){
+    list.innerHTML += htmlCreate(val);
+    localStore(val);
+    document.getElementById("note").value = "";
+  }
 });
 
 
