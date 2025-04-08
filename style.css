@@ -122,6 +122,9 @@ main button:hover {
 footer {
     background-color: #4c4c4c;
     padding: 1rem 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
 }
 
 footer ol {
